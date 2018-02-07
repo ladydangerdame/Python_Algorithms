@@ -88,12 +88,6 @@ class LinkedList:
             node = node.next
         print()
 
-    # def print_list(self):#print list doesn't work right yet... don't call it. RECURSION! ugh I'm tired
-    #     link_list = self.head
-    #     while link_list is not None:
-    #         print("Printing...")
-    #         print(link_list)
-
     __repr__ = __str__
 
 
