@@ -81,11 +81,18 @@ class LinkedList:
     def __str__(self):
         return str(self.head)
 
-    def print_list(self):#print list doesn't work right yet... don't call it. RECURSION! ugh I'm tired
-        link_list = self.head
-        while link_list is not None:
-            print("Printing...")
-            print(link_list)
+    def print_list(self):
+        node = self.head
+        while node is not None:
+            print(node.data)
+            node = node.next
+        print()
+
+    # def print_list(self):#print list doesn't work right yet... don't call it. RECURSION! ugh I'm tired
+    #     link_list = self.head
+    #     while link_list is not None:
+    #         print("Printing...")
+    #         print(link_list)
 
     __repr__ = __str__
 
@@ -97,7 +104,10 @@ people.insert_front("First")
 people.insert_front("Second")
 people.insert_front("Third")
 people.insert_front("Fourth")
+
+print("printing list:")
+people.print_list();
 # people.delete("Second")
-people.check_size()
-people.delete("First")
-people.check_size()
+# people.check_size()
+# people.delete("First")
+# people.check_size()
