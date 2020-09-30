@@ -42,7 +42,13 @@ if __name__ == '__main__':
     stack.push(10)              # Pushing values in stack
     stack.push(20)
     stack.push(30)
+    
+    stack.top()                 # Returns a reference to the top most element of the stack 
 
+    stack.size()                # Returns the size of the stack
+    
+    stack.empty()               # Returns whether the stack is empty 
+    
     stack.pop()                 # Poping values from stack
     stack.pop()
     stack.pop()
